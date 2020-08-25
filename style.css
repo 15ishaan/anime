@@ -3,7 +3,7 @@
 	padding: 0;
 }
 body{
-	background: #B6981C;
+	background: #89751A;
 	background-size: cover;
 }
 .face{
@@ -25,45 +25,35 @@ body{
 	width: 150px;
 	border-bottom-left-radius: 70px;
 	border-bottom-right-radius: 70px;
+	transition: 0.5s;
 }
 .face:hover .mouth{
-	height: 10px;
+	height: 20px;
 	border-bottom-left-radius: 0;
 	border-bottom-right-radius: 0;
 }
-.left-eye{
-	position: absolute;
-	top: 30%;
-	left: 25%;
-	width: 55px;
-	height: 55px;
-	border-radius: 50%;
+.eyes{
+	position: relative;
+	top: 75px;
+	display: flex;
+	left: 37px;
+}
+.eyes .eye{
+	position: relative;
+	width: 80px;
+	height: 80px;
 	background: white;
-}
-.right-eye{
-	position: absolute;
-	top: 30%;
-	left: 55%;
-	width: 55px;
-	height: 55px;
+	margin: 0 15px;
 	border-radius: 50%;
-	background: white;
 }
-.left-eyeball{
+.eyes .eye::before{
+	content: '';
 	position: absolute;
-	top: 45%;
-	left: 27%;
-	width: 30px;
-	height: 30px;
+	top: 50%;
+	left: 25px;
+	transform: translate(-50%, -50%);
+	height: 40px;
+	width: 40px;
+	background: #424242;
 	border-radius: 50%;
-	background: black;
-}
-.right-eyeball{
-	position: absolute;
-	top: 45%;
-	left: 27%;
-	width: 30px;
-	height: 30px;
-	border-radius: 50%;
-	background: black;
 }
