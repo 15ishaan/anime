@@ -1,5 +1,4 @@
 window.addEventListener('mousemove', eyeball);
-document.querySelector('body').addEventListener('click', f);
 function eyeball(){
 
 	var eye = document.querySelectorAll('.eye');
@@ -13,8 +12,4 @@ function eyeball(){
 
 		eye.style.transform = "rotate("+rot+"deg)";
 	})
-}
-function f(){
-	console.log(event.pageX);
-	console.log(event.pageY);
 }
