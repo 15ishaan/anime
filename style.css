@@ -33,10 +33,10 @@ body{
 	border-bottom-right-radius: 0;
 }
 .eyes{
-	position: relative;
+	position: absolute;
 	top: 75px;
-	display: flex;
 	left: 37px;
+	display: flex;
 }
 .eyes .eye{
 	position: relative;

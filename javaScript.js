@@ -1,4 +1,7 @@
 window.addEventListener('mousemove', eyeball);
+document.getElementById("one").addEventListener("click", f);
+document.getElementById("two").addEventListener("click", f);
+
 function eyeball(){
 
 	var eye = document.querySelectorAll('.eye');
@@ -11,5 +14,9 @@ function eyeball(){
 		let rot = (radian*(180 / Math.PI)*-1)+270;
 
 		eye.style.transform = "rotate("+rot+"deg)";
+		console.log(eye.clientWidth);
 	})
+}
+function f(){
+	alert("Oooh! My eyes hurts.");
 }
